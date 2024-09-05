@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.inputText {
+  width: 39.875rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--gray-100);
+  background-color: var(--gray-500);
+  border: none;
+  outline: none;
+}
+
+button.addTask {
+  background-color: var(--blue-dark);
+  width: 5.625rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: var(--gray-100);
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  transition: 0.5s background-color;
+}
+button.addTask:not(:disabled):hover {
+  background-color: var(--blue);
+}
+button.addTask:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.formContainer {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+
+  gap: 0.5rem;
+  position: relative;
+  transform: translateY(-1.5rem);
+}
+
+.boxTasks {
+  display: grid;
+  grid-template-rows: fit-content 15.25rem;
+  gap: 1.5rem;
+  width: 46rem;
+}
+.countContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+}
+.countContainer p:first-child {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: bold;
+
+  span {
+    font-size: 12px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 0.5rem;
+  }
+}
+.countContainer p:last-child {
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: bold;
+
+  span {
+    font-size: 12px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 0.5rem;
+  }
+}
+.listBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
